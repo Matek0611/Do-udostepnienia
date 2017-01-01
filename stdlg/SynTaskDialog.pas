@@ -1078,7 +1078,7 @@ begin
   then begin
     Dialog.Emulated := False;
     // use Vista/Seven TaskDialog implementation (not tdfQuery nor Selection)
-    FillChar(Config,sizeof(Config),0);
+    //FillChar(Config,sizeof(Config),0);
     Config.cbSize := sizeof(Config);
     Config.hwndParent := aParent;
     Config.pszWindowTitle := pointer(N(Title));
